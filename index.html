@@ -9,20 +9,25 @@
   <script defer src="script.js"></script>
 </head>
 <body>
+
+  <!-- Navigation Bar -->
   <header>
     <nav class="navbar">
-      <div class="logo">NTSR</div>
+      <div class="logo">
+        <img src="logo-no-background.png" alt="NTSR Logo" class="logo-icon">
+        <span>NTSR</span>
+      </div>
       <ul class="nav-links">
         <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
         <li><a href="#research"><i class="fas fa-flask"></i> Research</a></li>
         <li><a href="#trading"><i class="fas fa-chart-line"></i> Trading</a></li>
-        <li><a href="#partners"><i class="fas fa-handshake"></i> Partners</a></li>
         <li><a href="#news"><i class="fas fa-newspaper"></i> News</a></li>
         <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero">
     <div class="animated-bg"></div>
     <div class="hero-content">
@@ -32,6 +37,7 @@
     </div>
   </section>
 
+  <!-- About Section -->
   <section class="about" id="about">
     <div class="about-content">
       <div class="text">
@@ -41,30 +47,40 @@
     </div>
   </section>
 
-  <section class="section" id="research">
+  <!-- Research Section -->
+  <section class="section alt-bg" id="research">
     <h2 class="fade-in">Research & Development</h2>
-    <p class="fade-in">Our team focuses on breakthrough research in finance and technology to deliver innovative market solutions.</p>
+    <p class="fade-in">NTSR's research division investigates market behavior, AI-driven forecasting models, and dynamic financial instruments with real-world applications.</p>
   </section>
 
+  <!-- Trading Solutions -->
   <section class="section" id="trading">
     <h2 class="fade-in">Trading Solutions</h2>
-    <p class="fade-in">Discover how we integrate scientific methods with strategic trading approaches.</p>
+    <p class="fade-in">We turn complex data into actionable insights for efficient and predictive trading strategies across multiple platforms and assets.</p>
     <div class="animated-box"></div>
   </section>
 
-  <section class="section" id="partners">
-    <h2 class="fade-in">Partnerships & Services</h2>
-    <p class="fade-in">Join us in transforming the future of market and science.</p>
-    <button class="cta slide-in">Start Partnering</button>
-  </section>
-
-  <section class="section" id="news">
+  <!-- News Section -->
+  <section class="section alt-bg" id="news">
     <h2 class="fade-in">News & Updates</h2>
     <div class="news-ticker">
       <p>🚀 Breakthrough in AI-driven finance modeling. <a href="#">Read more</a></p>
     </div>
   </section>
 
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <h2 class="fade-in">Contact Us</h2>
+    <p class="fade-in">Want to collaborate or learn more? Reach out to our team anytime via our email or contact form below.</p>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
   <footer>
     <div class="footer-links">
       <a href="#">Privacy Policy</a>
@@ -80,5 +96,6 @@
       <button type="submit">Sign Up</button>
     </form>
   </footer>
+
 </body>
 </html>
