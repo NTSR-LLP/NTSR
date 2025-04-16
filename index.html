@@ -1,66 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NTSR | Advancing Knowledge, Empowering Markets</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <script defer src="script.js"></script>
-  <style>
-    .hero {
-      position: relative;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      overflow: hidden;
-    }
-    .hero-video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -2;
-    }
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.4);
-      z-index: -1;
-    }
-    .hero-content {
-      text-align: center;
-      z-index: 1;
-    }
-  </style>
+  <title>NTSR</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
+<body>
   <!-- Navigation Bar -->
-  <header>
-    <nav class="navbar blur-navbar">
-      <div class="logo">
-        <img src="logo-no-background.png" alt="NTSR Logo" class="logo-icon">
-        <span>NTSR</span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-        <li><a href="#research"><i class="fas fa-flask"></i> Research</a></li>
-        <li><a href="#trading"><i class="fas fa-chart-line"></i> Trading</a></li>
-        <li><a href="#news"><i class="fas fa-newspaper"></i> News</a></li>
-        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-      </ul>
+  <header class="navbar">
+    <div class="logo">NTSR</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#trading">Trading</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
     </nav>
+    <div class="auth">
+      <button class="btn login">Log in</button>
+      <button class="btn signup">Sign up</button>
+    </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero Section with Video Background -->
   <section class="hero">
     <video autoplay muted loop playsinline preload="auto" class="hero-video">
       <source src="background-stock.mp4" type="video/mp4">
@@ -69,37 +34,41 @@
     <div class="overlay"></div>
     <div class="hero-content">
       <h1 class="fade-in">Advancing Knowledge, Empowering Markets</h1>
-      <button class="cta glow">Explore Our Research</button>
-      <button class="cta glow">Partner With Us</button>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section class="about glass-card" id="about">
-    <div class="about-content">
-      <div class="text">
-        <h2 class="fade-in">About NTSR</h2>
-        <p class="fade-in">We combine cutting-edge science and financial expertise to create revolutionary trading insights.</p>
+      <div class="hero-buttons">
+        <button class="btn glow">Explore Our Research</button>
+        <button class="btn glow">Partner With Us</button>
       </div>
     </div>
   </section>
 
+  <!-- Prompt Box -->
+  <section class="prompt-box">
+    <p>
+      Make me <span class="highlight-blue">a game</span> for <span class="highlight-green">friends in different locations</span> that helps <span class="highlight-green">play together without</span> <span class="highlight-purple">needing to create accounts or downloads</span>
+    </p>
+  </section>
+
+  <!-- About Section -->
+  <section class="about glass-card" id="about">
+    <h2>About NTSR</h2>
+    <p>We combine cutting-edge science and financial expertise to create revolutionary trading insights.</p>
+  </section>
+
   <!-- Research Section -->
   <section class="section alt-bg glass-card" id="research">
-    <h2 class="fade-in">Research & Development</h2>
-    <p class="fade-in">NTSR's research division investigates market behavior, AI-driven forecasting models, and dynamic financial instruments with real-world applications.</p>
+    <h2>Research & Development</h2>
+    <p>NTSR's research division investigates market behavior, AI-driven forecasting models, and dynamic financial instruments with real-world applications.</p>
   </section>
 
   <!-- Trading Solutions -->
   <section class="section glass-card" id="trading">
-    <h2 class="fade-in">Trading Solutions</h2>
-    <p class="fade-in">We turn complex data into actionable insights for efficient and predictive trading strategies across multiple platforms and assets.</p>
-    <div class="animated-box"></div>
+    <h2>Trading Solutions</h2>
+    <p>We turn complex data into actionable insights for efficient and predictive trading strategies across multiple platforms and assets.</p>
   </section>
 
   <!-- News Section -->
   <section class="section alt-bg glass-card" id="news">
-    <h2 class="fade-in">News & Updates</h2>
+    <h2>News & Updates</h2>
     <div class="news-ticker">
       <p>🚀 Breakthrough in AI-driven finance modeling. <a href="#">Read more</a></p>
     </div>
@@ -107,13 +76,13 @@
 
   <!-- Contact Section -->
   <section class="section glass-card" id="contact">
-    <h2 class="fade-in">Contact Us</h2>
-    <p class="fade-in">Want to collaborate or learn more? Reach out to our team anytime via our email or contact form below.</p>
+    <h2>Contact Us</h2>
+    <p>Want to collaborate or learn more? Reach out to our team anytime via our email or contact form below.</p>
     <form class="contact-form">
       <input type="text" placeholder="Your Name" required>
       <input type="email" placeholder="Your Email" required>
       <textarea placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
+      <button type="submit" class="btn submit">Send Message</button>
     </form>
   </section>
 
@@ -128,10 +97,8 @@
       <i class="fab fa-linkedin"></i>
       <i class="fab fa-facebook"></i>
     </div>
-    <form class="newsletter">
-      <input type="email" placeholder="Subscribe to our newsletter">
-      <button type="submit">Sign Up</button>
-    </form>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
