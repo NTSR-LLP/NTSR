@@ -12,7 +12,7 @@
 
   <!-- Navigation Bar -->
   <header>
-    <nav class="navbar">
+    <nav class="navbar blur-navbar">
       <div class="logo">
         <img src="logo-no-background.png" alt="NTSR Logo" class="logo-icon">
         <span>NTSR</span>
@@ -29,16 +29,19 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="animated-bg"></div>
+    <video autoplay muted loop class="hero-video">
+      <source src="background-stock.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
     <div class="hero-content">
       <h1 class="fade-in">Advancing Knowledge, Empowering Markets</h1>
-      <button class="cta slide-in">Explore Our Research</button>
-      <button class="cta slide-in">Partner With Us</button>
+      <button class="cta glow">Explore Our Research</button>
+      <button class="cta glow">Partner With Us</button>
     </div>
   </section>
 
   <!-- About Section -->
-  <section class="about" id="about">
+  <section class="about glass-card" id="about">
     <div class="about-content">
       <div class="text">
         <h2 class="fade-in">About NTSR</h2>
@@ -48,20 +51,20 @@
   </section>
 
   <!-- Research Section -->
-  <section class="section alt-bg" id="research">
+  <section class="section alt-bg glass-card" id="research">
     <h2 class="fade-in">Research & Development</h2>
     <p class="fade-in">NTSR's research division investigates market behavior, AI-driven forecasting models, and dynamic financial instruments with real-world applications.</p>
   </section>
 
   <!-- Trading Solutions -->
-  <section class="section" id="trading">
+  <section class="section glass-card" id="trading">
     <h2 class="fade-in">Trading Solutions</h2>
     <p class="fade-in">We turn complex data into actionable insights for efficient and predictive trading strategies across multiple platforms and assets.</p>
     <div class="animated-box"></div>
   </section>
 
   <!-- News Section -->
-  <section class="section alt-bg" id="news">
+  <section class="section alt-bg glass-card" id="news">
     <h2 class="fade-in">News & Updates</h2>
     <div class="news-ticker">
       <p>🚀 Breakthrough in AI-driven finance modeling. <a href="#">Read more</a></p>
@@ -69,7 +72,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="section" id="contact">
+  <section class="section glass-card" id="contact">
     <h2 class="fade-in">Contact Us</h2>
     <p class="fade-in">Want to collaborate or learn more? Reach out to our team anytime via our email or contact form below.</p>
     <form class="contact-form">
@@ -96,6 +99,5 @@
       <button type="submit">Sign Up</button>
     </form>
   </footer>
-
 </body>
 </html>
